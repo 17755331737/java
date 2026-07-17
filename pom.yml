@@ -18,9 +18,7 @@
 
 
     <groupId>com.tensquare</groupId>
-
     <artifactId>tensquare-eureka</artifactId>
-
     <version>1.0</version>
 
 
@@ -30,6 +28,7 @@
     </properties>
 
 
+    <!-- Spring Cloud版本管理 -->
     <dependencyManagement>
 
         <dependencies>
@@ -47,17 +46,18 @@
     </dependencyManagement>
 
 
+
     <dependencies>
 
 
-        <!-- Eureka Server -->
+        <!-- Eureka Server核心依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
 
-        <!-- Web -->
+        <!-- Spring Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -65,6 +65,7 @@
 
 
     </dependencies>
+
 
 
     <build>
